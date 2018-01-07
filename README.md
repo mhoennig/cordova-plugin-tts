@@ -30,7 +30,8 @@ document.addEventListener('deviceready', function () {
         .speak({
             text: 'hello, world!',
             locale: 'en-GB',
-            rate: 0.75
+            rate: 0.75,
+            volume: 0.1
         }, function () {
             alert('success');
         }, function (reason) {
@@ -58,6 +59,8 @@ declare namespace TTS {
         locale?: string;
         /** speed rate, 0 ~ 1 */
         rate?: number;
+        /** [currently Android only] volume, 0 ~ 1 (for human recepted loundness of 50%, you need to use about 0.2) */
+        volume?: number;
     }
 
     function speak(options: IOptions, onfulfilled: () => void, onrejected: (reason) => void): void;

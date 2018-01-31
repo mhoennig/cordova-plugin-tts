@@ -9,7 +9,8 @@ Android 4.0.3+ (API Level 15+)
 ## Installation
 
 ```sh
-cordova plugin add cordova-plugin-tts
+# instead of: cordova plugin add cordova-plugin-tts
+cordova plugin add https://github.com/mhoennig/cordova-plugin-tts.git
 ```
 
 ## Usage
